@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ming's Dinner</title>
+
+  <!-- bootstrap css cdn link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- fontawesome cdn link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <style>
+    .address__icon i {
+    color: #fefefe;
+    font-size: 36px;
+    }
+
+    .address__icon {
+    background: #2e8ebb none repeat scroll 0 0;
+    height: 120px;
+    line-height: 144px;
+    text-align: center;
+    width: 110px;
+    }
+
+    .address {
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px;
+    }
+
+  .address__details {
+    background: #f5f5f5 none repeat scroll 0 0;
+    flex-basis: calc(100% - 110px);
+    padding: 32.5px 12px 33.5px 42px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- navbar-section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/mings.png" width="30" height="30" class="d-inline-block align-top" alt="Brand Image">
+      Ming's Dinner
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menus.html">Best Sellers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /navbar-section -->
+
+  <div class="text-center text-dark m-5">
+    <h1 class="p-2">Contact Us</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div id="text-center">
+            <img style="border:2px solid #000; width: 100%;" src="images/cotcn.jpg" alt="Contact-image">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="mb-5 mb-md-0 col-md-6">
+        <h2 class="my-3">Contact Form</h2>
+        <form class="">
+          <div class="row">
+            <div class="col-sm-6 mb-4">
+              
+              <div class="form-group">
+                <label for="name" class="form-label">Your firstname *</label><input name="name" id="name"
+                  placeholder="Enter your firstname" required="" type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <div class="form-group">
+                <label for="surname" class="form-label">Your lastname *</label><input name="surname" id="surname"
+                  placeholder="Enter your lasttname" required="" type="text" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-4">
+            <label for="email" class="form-label">Your email *</label><input name="email" id="email"
+              placeholder="Enter your email" required="" type="email" class="form-control" />
+          </div>
+          <div class="form-group mb-4">
+            <label for="message" class="form-label">Your message for us *</label><textarea rows="4" name="message"
+              id="message" placeholder="Enter your message" required="" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-info">Send message</button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2 class="my-3">Contact Details</h2>
+              <div class="address">
+                <div style="background:#a3f78d; border-radius:50%;" class="address__icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="address__details">
+                  <h2 class="ct__title">Our Address</h2>
+                  <p>28/45,Syama Prasad Mukherjee Road, Kolkata, West Bengal,India - 700012. </p>
+                </div>
+              </div>
+              <div class="address">
+                <div style="background:#d64de6; border-radius:50%;" class="address__icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="address__details">
+                  <h2 class="ct__title">Openning hour</h2>
+                  <p>8:30AM to 11:30PM </p>
+                </div>
+              </div>
+
+              <div class="address">
+                <div style="background:#efb193; border-radius:50%;" class="address__icon">
+                  <i class="fa fa-mobile"></i>
+                </div>
+                <div class="address__details">
+                  <h2 class="ct__title">Phone Number</h2>
+                  <p>033-6586-587456</p>
+                  <p>033-2656-8836</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white text-center p-4">
+      <div class="container">
+        <span>Copyright © Ming's Dinner food Services All rights reserved!</span>
+      </div>
+    </footer>
+    <!-- /Footer Section -->
+    <!-- bootstrao js cdn links -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
