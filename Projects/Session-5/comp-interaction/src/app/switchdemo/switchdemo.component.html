@@ -1,0 +1,27 @@
+<h1>Switch Demo</h1>
+
+<input type="text" [(ngModel)]="num"/>
+
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="1" class="text-primary">
+        <h2>Today is Sunday</h2><!--  -->
+    </div>
+    <div *ngSwitchCase="2" class="text-success">
+        <h2>Today is Monday</h2>
+    </div>
+    <div *ngSwitchCase="3" class="text-warning">
+        <h2>Today is Tuesday</h2>
+    </div>
+    <div *ngSwitchCase="4" class="text-info">
+        <h2>Today is Wednesday</h2>
+    </div>
+    <div *ngSwitchCase="5" class="text-danger">
+        <h2>Today is Thursday</h2>
+    </div>
+    <div *ngSwitchCase="6" class="text-secondary">
+        <h2>Today is Friday</h2>
+    </div>
+    <div *ngSwitchCase="7" class="text-dark">
+        <h2>Today is Saturday</h2>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<h1>Parent Component</h1>
+<h3>value coming from Child is : {{cdata}}</h3>
+<input type="text" (keyup)="0" #ptext/>
+<br>
+<!--included child component-->
+<app-child [pdata]="ptext.value" (cevent)="cdata=$event"></app-child>
+
+<p>--------------------------------------------------------------------------------</p>
+<p>--------------------------------------------------------------------------------</p>
+
+<ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link" routerLink="register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="switch">Switch Demo</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="pipe">Pipes Demo</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="user">Service Demo</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>
+
+
+
+
